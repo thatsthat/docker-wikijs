@@ -1,0 +1,16 @@
+---
+services:
+  liles:
+    image: liles:latest
+    volumes:
+      - /dev/net/tun:/dev/net/tun
+    cap_add:
+      - NET_ADMIN
+      - NET_RAW
+    container_name: liles
+    env_file: ".env.local"
+    environment:
+      - PUID=1000
+      - PGID=1000
+      - TZ=Etc/UTC
+    restart: unless-stopped

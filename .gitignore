@@ -1,4 +1,3 @@
 .jenkins-external
-compose.yml
 .env.local
 build.log
