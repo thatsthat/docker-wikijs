@@ -4,6 +4,7 @@ services:
     image: liles:latest
     volumes:
       - /dev/net/tun:/dev/net/tun
+      - liles-ts:/var/lib/tailscale
     cap_add:
       - NET_ADMIN
       - NET_RAW
