@@ -15,3 +15,5 @@ services:
       - PGID=1000
       - TZ=Etc/UTC
     restart: unless-stopped
+volumes:
+  liles-ts:
